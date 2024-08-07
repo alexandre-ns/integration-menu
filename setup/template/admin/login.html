@@ -1,0 +1,6 @@
+{% extends 'admin/login.html' %}
+
+{% block content %}
+    {{ block.super }}
+    <p class="submit-row"><a href="{% url 'admin:my_custom_signup_view' %}" class="button">Registrar</a></p>
+{% endblock %}
