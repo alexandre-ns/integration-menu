@@ -34,7 +34,7 @@ DEBUG = True
 
 # Application definition
 
-INSTALLED_APPS = [
+DEFAULT_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,6 +43,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
 ]
+
+APPS = [
+    'anotai',
+]
+
+INSTALLED_APPS = DEFAULT_APPS + APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
